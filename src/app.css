@@ -1,3 +1,27 @@
+@font-face {
+	font-family: 'Pico8';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''), url('/fonts/PICO-8.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Upper';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''), url('/fonts/PICO-8_upper.ttf') format('truetype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	font-family: 'Pico8';
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Upper';
+}

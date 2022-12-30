@@ -4,7 +4,7 @@
 
 <li>
 	<a {href} class="relative block px-3 py-2 transition">
-		<span class="hover:text-teal-500 dark:hover:text-teal-400">
+		<span class="hover:text-yellow-400 dark:hover:text-teal-400">
 			<slot />
 		</span>
 	</a>
