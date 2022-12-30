@@ -20,3 +20,9 @@
 		</div>
 	</div>
 </main>
+
+<style>
+    main {
+        height: 110vh;
+    }
+</style>
