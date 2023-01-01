@@ -1,28 +1,48 @@
-<svelte:head>
-	<title>Saltbase - Home</title>
-</svelte:head>
+<script lang="ts">
+	import { fade, fly } from 'svelte/transition';
+	import '../app.css';
+	import { active } from '$lib/stores';
+	import Typewriter from '$lib/components/typewriter.svelte';
 
-<main class="mt-12">
-	<div class="mx-auto max-w-7xl lg:px-8">
-		<div class="relative px-4 sm:px-8 lg:px-12">
-			<div class="mx-auto max-w-2xl lg:max-w-5xl">
-				<div class="container relative top-16 text-zinc-900 dark:text-zinc-50">
-					<h1 class="max-w-2xl text-4xl leading-relaxed">
-						Builder, amateur chef, and part time racer
-					</h1>
-					<p class="text-md mt-6 max-w-2xl leading-6 text-zinc-700 dark:text-zinc-300/50">
-						I'm Henry, a freelancer based in Chicago. My apps are made with a seasoned touch and
-						like any motorcyclist worth their salt, an emphasis on performance and reliability goes
-						without saying.
-					</p>
-				</div>
-			</div>
-		</div>
+	let motd = 'secure, lean apps made from scratch';
+
+	function handleFocus() {
+		active.set(true);
+	}
+</script>
+
+<svelte:body on:click={handleFocus} on:keypress={handleFocus} />
+
+<div
+	class="grid h-screen grid-flow-col grid-rows-2 place-content-center dark:text-zinc-300"
+	transition:fade
+>
+	<div class="col-span-full mt-60 text-center">
+		<h1 id="title" class="py-8 text-8xl tracking-wide">SALTBASE</h1>
+		<span class="my-2 text-3xl"
+			>{#if $active}{#key motd} <Typewriter textContent={motd} />{/key}{/if}</span
+		>
 	</div>
-</main>
-
-<style>
-    main {
-        height: 110vh;
-    }
-</style>
+	<div in:fly={{ y: 200, duration: 2000 }} class="col-span-1 my-20 text-center">
+		{#if !$active}
+			<span class="text-3xl">Click anywhere to begin</span>
+		{:else}
+			<ul transition:fade id="menu-select" class="list-outside text-2xl">
+				<li id="home" class="menu-option my-2">
+					<a
+						href="/home"
+						class="px-4 hover:text-zinc-50 hover:underline hover:decoration-dotted hover:underline-offset-8"
+						>Enter</a
+					>
+				</li>
+				<li id="credits" class="menu-option my-2">
+					<a
+						href="/credits"
+						class="px-4 hover:text-zinc-50 hover:underline hover:decoration-dotted hover:underline-offset-8"
+						>Credits</a
+					>
+				</li>
+			</ul>
+		{/if}
+	</div>
+</div>

@@ -1,6 +1,7 @@
 <script>
 	import Headroom from 'svelte-headroom';
 	import Header from '$lib/components/header.svelte';
+	import Footer from '$lib/components/footer.svelte';
 	import '../app.css';
 </script>
 
@@ -14,3 +15,5 @@
 </Headroom>
 
 <slot />
+
+<Footer />

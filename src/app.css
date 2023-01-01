@@ -1,4 +1,11 @@
 @font-face {
+	font-family: 'Monogram';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''), url('/fonts/monogram.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'Pico8';
 	font-style: normal;
 	font-weight: 500;
@@ -17,11 +24,5 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Pico8';
-}
-
-h1,
-h2,
-h3 {
-	font-family: 'Upper';
+	font-family: 'Monogram';
 }

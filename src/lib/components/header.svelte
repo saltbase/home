@@ -1,6 +1,7 @@
 <script lang="ts">
 	import NavItem from '$lib/components/nav-item.svelte';
-	import { onMount } from 'svelte';
+	import { onMount, setContext } from 'svelte';
+	import { page } from '$app/stores';
 
 	let dark: boolean;
 	let hidden = true;
@@ -55,23 +56,22 @@
 		<div class="mx-auto max-w-7xl lg:px-8">
 			<div class="relative px-4 sm:px-8 lg:px-12">
 				<div class="mx-auto max-w-2xl lg:max-w-5xl">
-					<div class="relative block flex gap-4 align-middle">
+					<div class="relative block flex gap-4 align-middle" class:hidden={$page.route.id === '/'}>
 						<div class="pointer-events-auto flex flex-1">
 							<a
-								href="/"
-								class="group h-10 rounded-md bg-white/90 bg-yellow-400 px-3 py-2 text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-yellow-300 hover:text-zinc-700 dark:bg-teal-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-teal-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+								href="/home"
+								class="group rounded-md bg-white/90 bg-yellow-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-yellow-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
 								>SALTBASE</a
 							>
 						</div>
 						<div class="flex flex-1 justify-end md:justify-center">
 							<nav class="pointer-events-auto block gap-x-4">
 								<ul
-									class="flex rounded-md bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+									class="flex rounded-md bg-white/90 px-3 pb-1 text-2xl font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
 								>
-									<NavItem href="/about">ABOUT</NavItem>
-									<NavItem href="/articles">ARTICLES</NavItem>
+									<NavItem href="/blog">BLOG</NavItem>
 									<NavItem href="/projects">PROJECTS</NavItem>
-									<NavItem href="/uses">USES</NavItem>
+									<NavItem href="/credits">CREDITS</NavItem>
 								</ul>
 							</nav>
 						</div>
