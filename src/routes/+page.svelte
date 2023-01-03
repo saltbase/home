@@ -31,14 +31,14 @@
 				<li id="home" class="menu-option my-2">
 					<a
 						href="/home"
-						class="px-4 hover:text-zinc-50 hover:underline hover:decoration-dotted hover:underline-offset-8"
+						class="px-4 hover:text-zinc-700 hover:underline hover:decoration-dotted hover:underline-offset-8 dark:hover:text-zinc-50"
 						>Enter</a
 					>
 				</li>
 				<li id="credits" class="menu-option my-2">
 					<a
 						href="/credits"
-						class="px-4 hover:text-zinc-50 hover:underline hover:decoration-dotted hover:underline-offset-8"
+						class="px-4 hover:text-zinc-700 hover:underline hover:decoration-dotted hover:underline-offset-8 dark:hover:text-zinc-50"
 						>Credits</a
 					>
 				</li>
