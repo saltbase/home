@@ -11,11 +11,11 @@
 		<div class="mx-auto mt-16 sm:mt-32 lg:max-w-5xl">
 			<div class="mt-16 sm:mt-20">
 				<div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-					<div class="mx-auto mt-8 lg:pl-20">
+					<div class="mx-auto mt-3 lg:pl-20">
 						<div class="-z-40 max-w-xs px-2.5 lg:max-w-none">
 							<img
 								src="/assets/portrait.jpg"
-								alt="Everlasting thanks to my homie Jahan for the photoshoot"
+								alt="Everlasting thanks to homie Jahan for the photoshoot"
 								sizes="(min-width: 1024px) 32rem, 20rem"
 								class="aspect-square rounded-md bg-zinc-100 object-cover grayscale hover:grayscale-0 dark:bg-zinc-800"
 							/>

@@ -1,5 +1,13 @@
 <script lang="ts">
+	import Article from './article.svelte';
 	import Section from '$lib/components/ui/section.svelte';
+
+	const articles = [
+		{
+			title: 'Hello World',
+			date: new Date(2023, 0, 1)
+		}
+	];
 </script>
 
 <svelte:head>
@@ -16,7 +24,13 @@
 				</p>
 			</header>
 			<div class="mt-16 sm:mt-20">
-				<div class="flex max-w-3xl flex-col space-y-16" />
+				<div
+					class="flex max-w-3xl flex-col space-y-16 md:border-l md:border-zinc-200/70 md:pl-6 md:dark:border-zinc-700/40"
+				>
+					{#each articles as { ...props }}
+						<Article title={props.title} date={props.date} />
+					{/each}
+				</div>
 			</div>
 		</div>
 	</div>

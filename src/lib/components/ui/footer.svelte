@@ -4,7 +4,7 @@
 
 <footer class="mt-12" class:hidden={$page.route.id === '/'}>
 	<div class="sm:px-8">
-		<div class="relative inset-x-0 bottom-0 mx-auto max-w-7xl lg:px-8">
+		<div class="absolute relative inset-x-0 bottom-0 mx-auto max-w-7xl lg:px-8">
 			<div class="pt-10 pb-16">
 				<div class="relative px-4 sm:px-8 lg:px-12">
 					<div class="mx-auto max-w-2xl lg:max-w-5xl">
