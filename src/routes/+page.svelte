@@ -23,19 +23,19 @@
 			>{#if $active}{#key motd} <Typewriter textContent={motd} />{/key}{/if}</span
 		>
 	</div>
-	<div in:fly={{ y: 200, duration: 2000 }} class="col-span-1 my-20 text-center">
+	<div in:fly={{ y: 200, duration: 2500 }} class="col-span-1 my-20 text-center">
 		{#if !$active}
 			<span class="text-3xl">Click anywhere to begin</span>
 		{:else}
 			<ul transition:fade id="menu-select" class="list-outside text-2xl">
-				<li id="home" class="menu-option my-2">
+				<li id="home" class="menu-option mb-4">
 					<a
 						href="/home"
 						class="px-4 hover:text-zinc-50 hover:underline hover:decoration-dotted hover:underline-offset-8"
 						>Enter</a
 					>
 				</li>
-				<li id="credits" class="menu-option my-2">
+				<li id="credits" class="menu-option my-4">
 					<a
 						href="/credits"
 						class="px-4 hover:text-zinc-50 hover:underline hover:decoration-dotted hover:underline-offset-8"

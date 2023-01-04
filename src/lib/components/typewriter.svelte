@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	export let textContent;
-	export let speedVal = 1.15;
+	export let speedVal = 1.5;
 
 	function typewriter(node, { speed = speedVal }) {
 		const text = textContent;
