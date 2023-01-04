@@ -16,7 +16,7 @@
 
 <div class="mt-4 h-screen sm:px-8">
 	<div class="mx-auto max-w-7xl">
-		<div class="mx-auto mt-16 px-4 sm:mt-32 lg:max-w-5xl">
+		<div class="mx-auto mt-16 px-2 sm:mt-32 lg:max-w-5xl">
 			<header class="max-w-2xl lg:max-w-5xl">
 				<h1 class="text-5xl text-zinc-800 dark:text-zinc-100">Sometimes, the Void yells back</h1>
 				<p class="mt-6 text-3xl font-thin text-zinc-600 dark:text-zinc-400">

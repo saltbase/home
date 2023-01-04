@@ -5,8 +5,10 @@
 
 	let dark: boolean;
 	let hidden = true;
+	let isMobileDevice: boolean;
 
 	onMount(() => {
+		isMobileDevice = /Mobi/i.test(window.navigator.userAgent);
 		dark = document.documentElement.classList.contains('dark');
 		hidden = false;
 		const matcher = window.matchMedia('(prefers-color-scheme: dark)');
@@ -57,25 +59,52 @@
 			<div class="relative px-4 sm:px-8 lg:px-12">
 				<div class="mx-auto max-w-2xl lg:max-w-5xl">
 					<div class="relative block flex gap-4 align-middle">
-						<div class="pointer-events-auto flex flex-1">
-							<a
-								href="/home"
-								class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
-								class:hidden={$page.route.id === '/'}>SALTBASE</a
-							>
-						</div>
-						<div class="flex flex-1 justify-end md:justify-center">
-							<nav class="pointer-events-auto block gap-x-4" class:hidden={$page.route.id === '/'}>
-								<ul
-									class="flex rounded-md bg-white/90 px-3 pb-1 text-2xl font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+						{#if !isMobileDevice}
+							<div class="pointer-events-auto flex flex-1">
+								<a
+									href="/home"
+									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+									class:hidden={$page.route.id === '/'}>SALTBASE</a
 								>
-									<NavItem href="/about">ABOUT</NavItem>
-									<NavItem href="/blog">BLOG</NavItem>
-									<NavItem href="/projects">PROJECTS</NavItem>
-									<NavItem href="/credits">CREDITS</NavItem>
-								</ul>
-							</nav>
-						</div>
+							</div>
+							<div class="flex flex-1 justify-end md:justify-center">
+								<nav
+									class="pointer-events-auto block gap-x-4"
+									class:hidden={$page.route.id === '/'}
+								>
+									<ul
+										class="flex rounded-md bg-white/90 px-3 pb-1 text-2xl font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+									>
+										<NavItem href="/about">ABOUT</NavItem>
+										<NavItem href="/blog">BLOG</NavItem>
+										<NavItem href="/projects">PROJECTS</NavItem>
+										<NavItem href="/credits">CREDITS</NavItem>
+									</ul>
+								</nav>
+							</div>
+						{:else}
+							<div class="pointer-events-auto flex flex-1">
+								<a
+									href="/home"
+									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+									class:hidden={$page.route.id === '/'}>SB</a
+								>
+							</div>
+							<div class="flex flex-1 justify-end md:justify-center">
+								<nav
+									class="pointer-events-auto block gap-x-4"
+									class:hidden={$page.route.id === '/'}
+								>
+									<ul
+										class="flex rounded-md bg-white/90 px-3 pb-1 text-2xl font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+									>
+										<NavItem href="/about">ABOUT</NavItem>
+										<NavItem href="/blog">BLOG</NavItem>
+										<NavItem href="/credits">CREDITS</NavItem>
+									</ul>
+								</nav>
+							</div>
+						{/if}
 						<div class="pointer-events-auto flex justify-end md:flex-1">
 							<button
 								class="{dark

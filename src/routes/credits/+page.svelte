@@ -115,7 +115,7 @@
 
 <div class="mt-4 h-full sm:px-8">
 	<div class="mx-auto max-w-7xl">
-		<div class="mx-auto mt-16 sm:mt-32 lg:max-w-5xl">
+		<div class="mx-auto mt-16 sm:mt-32 sm:px-2 lg:max-w-5xl">
 			<header class="max-w-2xl">
 				<h1 class="text-5xl text-zinc-800 dark:text-zinc-100">What's In My Stack?</h1>
 				<p class="mt-6 text-2xl font-thin text-zinc-600 dark:text-zinc-400 sm:text-3xl">

@@ -16,7 +16,9 @@
 			</a>
 		</h2>
 		<p class="relative z-10 mt-2 truncate text-sm text-zinc-600 dark:text-zinc-400">lorem ipsum</p>
-		<div class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+		<div
+			class="relative z-10 mt-4 flex items-center text-sm font-medium text-emerald-500 dark:text-indigo-500"
+		>
 			Read article >
 		</div>
 	</div>

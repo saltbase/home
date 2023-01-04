@@ -16,7 +16,7 @@
 
 <div class="mt-4 h-screen sm:px-8">
 	<div class="mx-auto max-w-7xl">
-		<div class="mx-auto mt-16 sm:mt-32 lg:max-w-5xl">
+		<div class="mx-auto mt-16 px-2 sm:mt-32 lg:max-w-5xl">
 			<header class="max-w-2xl">
 				<h1 class="text-5xl text-zinc-800 dark:text-zinc-100">
 					Look upon my Works, ye Mighty, and despair!
@@ -45,7 +45,7 @@
 								<p
 									class="text-md relative z-10 mt-6 flex font-medium text-zinc-400 transition group-hover:text-emerald-500 dark:text-zinc-200 dark:group-hover:text-indigo-500"
 								>
-									<span class="">{props.link.href}</span>
+									<a href={props.link.href}>{props.link.href}</a>
 								</p>
 							</li>
 						{/each}

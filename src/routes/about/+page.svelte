@@ -6,7 +6,7 @@
 	<title>About - Saltbase</title>
 </svelte:head>
 
-<div class="mt-4 h-full sm:px-8">
+<div class="mt-4 h-full sm:px-2">
 	<div class="mx-auto max-w-7xl">
 		<div class="mx-auto mt-16 sm:mt-32 lg:max-w-5xl">
 			<div class="mt-16 sm:mt-20">
@@ -21,8 +21,8 @@
 							/>
 						</div>
 					</div>
-					<div class="px-12 lg:order-first lg:row-span-2">
-						<h1 class="text-5xl text-zinc-800 dark:text-zinc-100">
+					<div class="pl-2 pr-10 lg:order-first lg:row-span-2">
+						<h1 class="text-3xl text-zinc-800 dark:text-zinc-100 md:text-5xl">
 							I'm Henry Ni. I live in Chicago, where I make the web a more accessible place.
 						</h1>
 						<div class="mt-6 space-y-7 text-2xl text-zinc-600 dark:text-zinc-400">
@@ -33,8 +33,8 @@
 							<p>
 								My fascination with computers began early, when my dad brought home an absolute
 								brick disguised as a laptop. The heft, combined with the way the backlight peeked
-								through the clasp as the lid rose instantly reminded me of the way treasure chests
-								filled with gold gleamed in the movies.
+								through the clasp instantly reminded me of the way treasure chests filled with gold
+								gleamed in the movies.
 							</p>
 							<p>
 								Today, I’m the founder of Saltbase, where I strive to keep that magic alive in the
