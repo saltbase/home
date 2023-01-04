@@ -60,7 +60,7 @@
 						<div class="pointer-events-auto flex flex-1">
 							<a
 								href="/home"
-								class="group rounded-md bg-white/90 bg-yellow-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-yellow-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+								class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
 								class:hidden={$page.route.id === '/'}>SALTBASE</a
 							>
 						</div>
@@ -80,7 +80,7 @@
 							<button
 								class="{dark
 									? 'bg-gray-600 ring-offset-gray-700 focus:ring-gray-400'
-									: 'bg-yellow-100 ring-offset-white focus:ring-yellow-400'} relative mt-2 inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2"
+									: 'bg-emerald-100 ring-offset-white focus:ring-emerald-400'} relative mt-2 inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2"
 								class:hidden
 								type="button"
 								aria-checked={dark}
@@ -110,7 +110,7 @@
 										aria-hidden="true"
 									>
 										<!-- sun icon -->
-										<svg class="h-3 w-3 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+										<svg class="h-3 w-3 text-emerald-400" viewBox="0 0 20 20" fill="currentColor">
 											<path
 												fill-rule="evenodd"
 												d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"

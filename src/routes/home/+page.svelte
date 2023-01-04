@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Saltbase - Home</title>
+	<title>Home - Saltbase</title>
 </svelte:head>
 
 <main class="mt-12">
