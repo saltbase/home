@@ -1,7 +1,3 @@
-<script lang="ts">
-	import Section from '$lib/components/ui/section.svelte';
-</script>
-
 <svelte:head>
 	<title>About - Saltbase</title>
 </svelte:head>
@@ -11,7 +7,7 @@
 		<div class="mx-auto mt-16 sm:mt-32 lg:max-w-5xl">
 			<div class="mt-16 sm:mt-20">
 				<div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-					<div class="mx-auto mt-3 lg:pl-20">
+					<div class="mx-auto mt-2 lg:pl-20">
 						<div class="-z-40 max-w-xs px-2.5 lg:max-w-none">
 							<img
 								src="/assets/portrait.jpg"

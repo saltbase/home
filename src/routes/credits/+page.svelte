@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Section from '$lib/components/ui/section.svelte';
+	import Section from './section.svelte';
 
 	const workspace = [
 		{
@@ -13,7 +13,7 @@
 			title: '12.9" iPad Pro (2020) & Apple Pencil',
 			description: `
                 For a complement to a MacBook Pro it has a lot of potential.
-                As a daily driver, I think it's still half-baked.
+                As a daily driver, I think iPadOS is still a bit half-baked.
             `
 		},
 		{
@@ -26,7 +26,7 @@
 		{
 			title: 'ZSA Moonlander Mk1 Ergonomic Keyboard',
 			description: `
-                The split, orthogonal mechanical keyboard of my dreams. 
+                The split ortholinear mechanical keyboard of my dreams. 
                 Currently equipped with Kailh Box Jade switches.
             `
 		},

@@ -63,7 +63,7 @@
 							<div class="pointer-events-auto flex flex-1">
 								<a
 									href="/home"
-									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
 									class:hidden={$page.route.id === '/'}>SALTBASE</a
 								>
 							</div>
@@ -105,7 +105,8 @@
 								</nav>
 							</div>
 						{/if}
-						<div class="pointer-events-auto flex justify-end md:flex-1">
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<div class="pointer-events-auto flex justify-end md:flex-1" on:click={toggle}>
 							<button
 								class="{dark
 									? 'bg-gray-600 ring-offset-gray-700 focus:ring-gray-400'
@@ -113,8 +114,7 @@
 								class:hidden
 								type="button"
 								aria-checked={dark}
-								on:click={toggle}
-							>
+								>
 								<span class="sr-only">Toggle Dark Mode</span>
 								<span
 									class="{dark

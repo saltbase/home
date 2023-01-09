@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Article from './article.svelte';
-	import Section from '$lib/components/ui/section.svelte';
 
 	const articles = [
 		{

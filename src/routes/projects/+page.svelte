@@ -1,10 +1,11 @@
 <script lang="ts">
-	import Section from '$lib/components/ui/section.svelte';
-
 	const projects = [
 		{
 			name: 'Ansong Law',
-			description: 'Chicago-based real estate firm Ansong Law. Design by Jenn Styrcula.',
+			description: `
+				Provided technical consulting, web hosting, network configuration and site building
+				services. Design by Jenn Styrcula.
+			`,
 			link: { href: 'https://ansonglaw.com', label: 'ansonglaw.com' }
 		}
 	];

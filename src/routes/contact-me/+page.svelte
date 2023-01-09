@@ -1,7 +1,3 @@
-<script lang="ts">
-	import Section from '$lib/components/ui/section.svelte';
-</script>
-
 <svelte:head>
 	<title>Contact Me - Saltbase</title>
 </svelte:head>
