@@ -53,17 +53,17 @@
 	</script>
 </svelte:head>
 
-<header class="pointer-events-none relative top-6 z-50 flex h-16 flex-col">
+<header class="pointer-events-none relative top-6 z-40 flex h-16 flex-col">
 	<div class="w-full sm:px-8">
 		<div class="mx-auto max-w-7xl lg:px-8">
 			<div class="relative px-4 sm:px-8 lg:px-12">
 				<div class="mx-auto max-w-2xl lg:max-w-5xl">
 					<div class="relative block flex gap-4 align-middle">
 						{#if !isMobileDevice}
-							<div class="pointer-events-auto flex flex-1">
+							<div class="flex flex-1">
 								<a
 									href="/home"
-									class="group rounded-md bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+									class="group rounded-md bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition pointer-events-auto hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
 									class:hidden={$page.route.id === '/'}>SALTBASE</a
 								>
 							</div>

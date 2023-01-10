@@ -113,7 +113,7 @@
 	<title>Credits - Saltbase</title>
 </svelte:head>
 
-<div class="mt-4 h-full sm:px-8">
+<div class="-z-40 mt-4 h-full sm:px-8">
 	<div class="mx-auto max-w-7xl">
 		<div class="mx-auto mt-16 sm:mt-32 sm:px-2 lg:max-w-5xl">
 			<header class="max-w-2xl">
