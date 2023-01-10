@@ -1,4 +1,6 @@
 <script lang="ts">
+	import LinkIcon from '$lib/components/icons/link.svelte';
+
 	const projects = [
 		{
 			name: 'Ansong Law',
@@ -34,19 +36,23 @@
 								<div
 									class="absolute -inset-y-4 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"
 								/>
-								<h2 class="mt-6 text-xl text-zinc-800 dark:text-zinc-100">
+								<h2 class="mt-2 text-xl text-zinc-800 dark:text-zinc-100">
 									<a href={props.link.href}>
-										<span class="relative z-10">{props.name}</span>
+										<span class="relative z-10 text-2xl">{props.name}</span>
 									</a>
 								</h2>
 
 								<p class="relative z-10 mt-2 text-lg text-zinc-600 dark:text-zinc-400">
 									{props.description}
 								</p>
-								<p
-									class="text-md relative z-10 mt-6 flex font-medium text-zinc-400 transition group-hover:text-emerald-500 dark:text-zinc-200 dark:group-hover:text-indigo-500"
-								>
-									<a href={props.link.href}>{props.link.href}</a>
+								<p class="text-md relative z-10 my-3 flex font-medium text-zinc-400 transition ">
+									<span class="-ml-1 mr-1 h-6 w-6">
+										<LinkIcon />
+									</span>
+									<a
+										class="group-hover:text-emerald-500 dark:text-zinc-200 dark:group-hover:text-indigo-500"
+										href={props.link.href}>{props.link.href}</a
+									>
 								</p>
 							</li>
 						{/each}

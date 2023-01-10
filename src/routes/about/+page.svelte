@@ -2,7 +2,7 @@
 	<title>About - Saltbase</title>
 </svelte:head>
 
-<div class="mt-4 h-full sm:px-2">
+<div class="mt-4 sm:px-2">
 	<div class="mx-auto max-w-7xl">
 		<div class="mx-auto mt-16 sm:mt-32 lg:max-w-5xl">
 			<div class="mt-16 sm:mt-20">

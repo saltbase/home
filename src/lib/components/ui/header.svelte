@@ -63,7 +63,7 @@
 							<div class="pointer-events-auto flex flex-1">
 								<a
 									href="/home"
-									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+									class="group rounded-md bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
 									class:hidden={$page.route.id === '/'}>SALTBASE</a
 								>
 							</div>
@@ -73,7 +73,7 @@
 									class:hidden={$page.route.id === '/'}
 								>
 									<ul
-										class="flex rounded-md bg-white/90 px-3 pb-1 text-2xl font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+										class="flex rounded-md bg-white/90 px-3 pb-1 text-2xl font-medium text-zinc-800 ring-1 ring-zinc-900/10 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
 									>
 										<NavItem href="/about">ABOUT</NavItem>
 										<NavItem href="/blog">BLOG</NavItem>
@@ -86,7 +86,7 @@
 							<div class="pointer-events-auto flex flex-1">
 								<a
 									href="/home"
-									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
+									class="group rounded-md bg-white/90 bg-emerald-400 px-3 py-1 text-2xl text-zinc-800 text-zinc-50 ring-1 ring-zinc-900/10 backdrop-blur transition hover:bg-emerald-300 hover:text-zinc-700 dark:bg-indigo-700/90 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-indigo-900 dark:hover:text-zinc-300 dark:hover:ring-white/20"
 									class:hidden={$page.route.id === '/'}>SB</a
 								>
 							</div>
@@ -114,7 +114,7 @@
 								class:hidden
 								type="button"
 								aria-checked={dark}
-								>
+							>
 								<span class="sr-only">Toggle Dark Mode</span>
 								<span
 									class="{dark
